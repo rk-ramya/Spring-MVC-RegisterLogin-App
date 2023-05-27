@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	crossorigin="anonymous">
+
+<title>Employee Directory</title>
+</head>
+
+<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1">Employee Directory Portal</span>
+		</nav>
+
+<hr>
+<body>
+
+	<div class="container p-3 mb-2 text-white" align="center">
+		
+		<div class="card text-white bg-info mb-3" style="max-width: 18rem;max-height: 10rem;">
+			<div class="card-header"></div>
+			<div class="card-body">
+				<h5 class="card-title">Register Employee</h5>
+				<p class="card-text">Register details of a new employee</p>
+				<a th:href="@{/customer/registerForm}" class="btn btn-info btn-lg btn-outline-light  ">
+					Register </a>
+			</div>
+		</div>
+
+		<div class="card text-black bg-warning mb-3" style="max-width: 18rem;max-height: 10rem">
+			<div class="card-header"></div>
+			<div class="card-body">
+				<h5 class="card-title">Login Employee</h5>
+				<p class="card-text">Already a user? Login with existing details</p>
+				<a th:href="@{/customer/loginForm}" class="btn btn-warning btn-lg btn-outline-light ">
+					Login </a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
